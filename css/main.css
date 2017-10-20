@@ -118,7 +118,7 @@ html, body {
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
   padding: 0;
-  line-height: 1.2em; 
+  line-height: 1.2; 
 }
 
 p {
@@ -182,7 +182,7 @@ header {
   color: #fff;
   background: #000;
   font-size: 3em;
-  line-height: 2em;
+  line-height: 2;
   text-align: center;
 }
 
@@ -280,7 +280,7 @@ main {
   width: 46%;
   float: right;
   margin: 0;
-  padding: 2% 2% 0 2%
+  padding: 2% 2% 0 2%;
 }
 
 .feed .feed-info p {
@@ -751,6 +751,10 @@ footer {
 @media (min-width: 940px) {
   body {
     font-size: 1.20rem;
+  }
+  
+  main {
+    max-width: 960px;
   }
 
 
