@@ -229,7 +229,7 @@ main {
 
 .newsletter input {
   width: 100%; 
-  box-sizing: border-box; /** the value that finally aligned SignUp btn with input field! **/
+  box-sizing: border-box; /** the value that finally aligned SignUp btn and input field! **/
   display: block;
 }   
  
@@ -245,9 +245,11 @@ main {
 
 .newsletter {
   padding: 5% 0;
-  border-bottom: 1px solid #ccc;
 }
 
+.feed {
+  border-top:  1px solid #ccc;
+}
 .feed h4 {
   padding: 2% 0;
 }
@@ -258,9 +260,9 @@ main {
   border-bottom: 1px solid #ccc;
 }
 
-.feed-item:nth-child(7) {
+.feed-item:last-child {
   border-bottom: none;
-}
+}  */
 
 .feed-type {
   display: block;
@@ -275,10 +277,10 @@ main {
 }
 
 .feed-info {
-  width: 48%;
+  width: 46%;
   float: right;
   margin: 0;
-  padding: 2% 0 0 2%
+  padding: 2% 2% 0 2%
 }
 
 .feed .feed-info p {
@@ -301,10 +303,49 @@ main {
   padding-bottom: 3%;
 }
 
-.article-page .newsletter {
-  border-bottom: none;
-}  
 
+
+/* * * * * * * * * * * * DEFAULT MOBILE CONCERTS PAGE STYLES * * * * * * * * * * * */
+
+
+.concert-page h2 {
+  padding: 2% 0;
+}
+
+.concert-page p {
+  margin-top: 0;
+}
+
+.concert-item {
+  width: 100%;
+  padding: 3% 0;
+  border-bottom: 1px solid #ccc;  
+}
+
+.concert-item:last-child {
+  border-bottom: none;
+}
+
+.concert-date {  /* 30% = 18% + 2% + 2px + 2px + 3% + 3% */
+  width: 18%;
+  text-transform: uppercase;
+  text-align: center;
+  float: left;
+  margin: 3% 2% 2% 0;
+  border: 2px solid #ccc;
+  padding: 3%;
+}
+
+.concert-info {  /* 70% = 64% + 3% + 3%  */
+  width: 64%;
+  float: right;
+  margin: 0;
+  padding: 3% 3%; 
+}
+
+.concert-page aside {
+  display: none;
+}
 
 /* * * * * * * * * * * * DEFAULT MOBILE ABOUT PAGE STYLES * * * * * * * * * * * */
 
@@ -394,6 +435,10 @@ main {
   width: 100%;
   padding: 3% 0;
   border-bottom: 1px solid #ccc;
+}
+
+.faq-item:last-child {
+  border-bottom: none;
 }
 
 
@@ -535,7 +580,7 @@ footer {
     width: 60%;
     float: right;
     text-align: right;
-    padding-top: 4%;
+    padding-top: 3%; 
   }
   
   nav ul li {
@@ -544,55 +589,33 @@ footer {
     padding-left: 5%;
   }
 
-
+  
+  
 /* * * * * * * * * * * T A B L E T  MAIN AREA OVERRIDES  * * * * * * * * * * * */
   
-  .top-story {   /* 100% = 62.5% + 37.5%  */
+  .top-story {   /* 100% = 65% + 35%  */
     width: 100%;
     clear: both;  
     padding-bottom: 2%;
   }
   
-  .top-story-img {  /*  62.5 = 60.5% + 2% */
-    width: 60.5%;
+  .top-story-img {  /*  65 = 63% + 2% */
+    width: 63%;
     float: left;
     margin: 0;
     padding-right: 2%;
   }
   
-  .top-info {   /* 37.5% = 35.5% + 2%  */
-    width: 35.5%;
+  .top-info {   /* 35%  */
+    width: 35%;
     float: right;
     margin: 0;
-    padding-left: 2%;
   }
-
-  .feed {
-    width: 61.5%;
-    float: left;
-    clear: both;    
-    margin: 0;  
-    border-right: 1px solid #ccc;  
-  }
-  
-  .feed-image {  /*  37.5% = 35.5% + 2% + 0  */
-    width: 35.5%;
-    float: left;
-    margin: 0;
-    padding: 2% 2% 2% 0;
-  }
-
-  .feed-info {   /*  62.5% = 58.5% + 2% + 2%  */
-    width: 58.5%;
-    float: right;
-    margin: 0;
-    padding: 2% 2%;
-  } 
-
+ 
   .sidebar {
- /*   clear: none;  */
-    width: 37.5%;
-    float: right;
+    clear: both;  
+    width: 35%;
+    float: right;   
     margin: 0;
     border-left: none;
   }
@@ -602,9 +625,24 @@ footer {
   .sidebar-faq {
     display: block;
     border-bottom: 1px solid #ccc;
-    padding: 5% 2%;
+   padding: 5% 2%;  
   }  
-    
+   
+  .feed {  
+    width: 64%;
+    float: left;
+    margin: 0;  
+    border-right: 1px solid #ccc; 
+    border-top: none;
+  }
+  
+  .feed-image {  
+    width: 33%;
+  }
+
+  .feed-info {   
+    width: 61%;
+  } 
 
   
 /* * * * * * * * * * T A B L E T  DETAIL STORY OVERRIDES  * * * * * * * * * * */
@@ -648,6 +686,30 @@ footer {
   }
 
 
+/* * * * * * * * *  T A B L E T  CONCERTS PAGE  OVERRIDES  * * * * * * * * * */
+  
+  .concerts-list {
+    width: 100%;
+    margin: 0;
+  }
+
+  .column-one {
+    width: 45%;
+    float: left;  
+  }
+  
+  
+  .column-two {
+    width: 45%;
+    float: right;
+}
+  
+  .concert-item:last-child {
+    border-bottom: none;
+  }
+  
+  
+  
 /* * * * * * * * * * T A B L E T  ABOUT PAGE  OVERRIDES  * * * * * * * * * * */
 
   .contact-us {
@@ -693,19 +755,13 @@ footer {
 
 
 /* * * * * * * * * * * D E S K T O P  MAIN AREA OVERRIDES  * * * * * * * * * * * */
-  .hero-area {
-    width: 100%;
-    clear: both;
-    border-bottom: 1px solid #ccc;
-  }
-  
+ 
   .top-story {
     width: 65%;
     margin: 0;
     float: left;
     border-bottom: none;
     padding-right: 1%;
-
   }
   
   .top-story-img {
@@ -727,6 +783,7 @@ footer {
     float: right;
     clear: none;
     margin: 0;
+    padding-bottom: 2%;
     border-left: 1px solid #ccc;
   }
   
@@ -741,6 +798,7 @@ footer {
   .feed {
     width: 100%;
     border-right: none;
+    border-top: 1px solid #ccc;
   }
    
   .feed-image {
@@ -793,7 +851,7 @@ footer {
   .article-page .sidebar {
     width: 30%;
     float: right;
-    clear: right;
+    clear: right;  
   }
   
   .article-page .newsletter input[type="text"],
@@ -803,6 +861,30 @@ footer {
   } 
  
 
+  
+  /* * * * * * * * D E S K T O P  CONCERT PAGE OVERRIDES  * * * * * * * * * */
+  .concert-page {
+    width: 100%;
+    margin: 0;    
+  }
+  
+  .concerts-list {
+    width: 68%;
+    float: left;
+    padding-right: 1.75%;
+    border-right: 1px solid #ccc;
+    border-bottom: none;
+  }   
+  
+  .concert-page .sidebar {
+    width: 30%;
+    float: right;
+    display: block;
+    border-left: none;
+  }
+
+  
+  
 /* * * * * * * * * D E S K T O P  ABOUT PAGE  OVERRIDES  * * * * * * * * * */
 
   .team-img {
